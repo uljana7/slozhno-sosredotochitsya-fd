@@ -11,5 +11,7 @@
   --text-color: rgba(241, 178, 206, 1);
   --section__padding: 25px ;
   --main__padding: 10px;
+  --title-font__color: rgba(219, 0, 255, 1);
+  --decorative-element__visibility: visible;
 
 }

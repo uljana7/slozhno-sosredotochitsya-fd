@@ -61,6 +61,7 @@
   text-align: center;
   align-self: end;
   margin-right: 20px;
+  visibility: var(--decorative-element__visibility);
 }
 
 .header__light::after{
@@ -74,6 +75,7 @@
   border-radius: 50%;
   box-shadow: 0px 0px 10px var(--accent-color);
   margin-left: 10px;
+  visibility: var(--decorative-element__visibility);
 }
 
 .header__theme-menu{
@@ -99,6 +101,11 @@
   margin: 5px 0;
 }
 
+.header__theme-menu-button_active{
+  pointer-events: none;
+  border: 1px solid var(--accent-color);
+}
+
 .header__theme-menu-button:hover{
   outline: solid 1px var(--accent-color-hover);
 }
@@ -116,7 +123,7 @@
   leading-trim: NONE;
   line-height: 83%;
   letter-spacing: 0%;
-  color: rgba(219, 0, 255, 1);
+  color: var(--title-font__color);
   text-shadow: 4px 4px 0 var(--accent-color);
   margin-top: 65px;
   align-self: center;
