@@ -76,7 +76,7 @@
 }
 
 .header__theme-menu {
-  margin-top: 75px;
+  margin-top: 60px;
   justify-self: end;
   gap: 10px;
 }
@@ -120,6 +120,7 @@
   align-self: center;
   justify-self: center;
 }
+
 .header__title {
   font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
   font-weight: 700;
@@ -136,7 +137,7 @@
 }
 
 .main {
-  padding: var(--section__padding) var(--main__padding);
+  padding: var(--main__padding-vertical) var(--main__padding-horizontal);
   background-color: var(--background-color);
 }
 
@@ -165,12 +166,17 @@
   margin-bottom: 10px;
 }
 
+.section__how .section__subtitle {
+  margin-bottom: 20px;
+}
+
 .section__subtitle-extra {
   font-family: IBM Plex Mono;
   font-weight: 400;
   font-size: 18px;
   line-height: 23.4px;
   color: var(--background-color);
+  margin-bottom: 10px;
 }
 
 .section__article-text {
@@ -278,10 +284,10 @@
   }
   .main {
     --section__padding: 40px;
-    --main__padding: 20px;
+    --main__padding-horizontal: 20px;
   }
   .section {
-    grid-template-columns: min-content fit-content;
+    grid-template-columns: min-content 1fr;
     gap: 20px;
   }
   .section__why .section__title {
@@ -293,6 +299,9 @@
   .section__what .section__title {
     grid-column: 1;
   }
+  .section__what article {
+    grid-column: 1/-1;
+  }
   .section__how .section__title {
     grid-column: 1;
   }
@@ -302,7 +311,7 @@
   }
   .section__gallery {
     display: grid;
-    grid-template-rows: min-content repeat(3, 1fr);
+    grid-template-rows: min-content repeat(3, fit-content);
     grid-template-columns: repeat(3, 1fr);
     grid-auto-flow: dense;
   }
@@ -310,26 +319,26 @@
     grid-row: 1;
     grid-column: 1 / -1;
   }
-  .section__gallery .gallery__item:first-of-type {
+  .img-sunset {
     grid-row: 2;
     grid-column-start: 1;
     grid-column-end: 3;
   }
-  .section__gallery .gallery__item:nth-child(2) {
+  .img-ice {
     grid-row-start: 2;
     grid-row-end: 4;
     grid-column: 3;
   }
-  .section__gallery .gallery__item:nth-child(3) {
+  .img-tape {
     grid-row-start: 3;
     grid-row-end: 5;
     grid-column: 1;
   }
-  .section__gallery .gallery__item:nth-child(4) {
+  .img-books {
     grid-row: 3;
     grid-column: 2;
   }
-  .section__gallery .gallery__item:nth-child(5) {
+  .img-street {
     grid-row: 4;
     grid-column-start: 2;
     grid-column-end: 4;
@@ -383,6 +392,12 @@
   }
   .section__what article {
     grid-row: 2;
+  }
+  .section__gallery {
+    display: grid;
+    grid-template-rows: min-content repeat(3, fit-content);
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: dense;
   }
   .section__gallery .section__subtitle {
     grid-row: 1;
