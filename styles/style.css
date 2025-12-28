@@ -294,7 +294,7 @@
   .section__title {
     margin-bottom: 0;
   }
-  .section__article-text{
+  .section__article-text {
     margin-bottom: 0;
   }
   .section__why .section__title {
@@ -313,7 +313,7 @@
     grid-column: 1;
     grid-row: 1 / span 2;
   }
-  .section__how .section__subtitle{
+  .section__how .section__subtitle {
     margin-bottom: 0;
   }
   .section__how article {
@@ -401,7 +401,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
-  .section__what .section__subtitle{
+  .section__what .section__subtitle {
     grid-column: span 1;
   }
   .section__what article {
@@ -417,5 +417,6 @@
   .section__gallery .section__subtitle {
     grid-row: 1;
     grid-column: 1 / -1;
+    margin-bottom: 0;
   }
 }
