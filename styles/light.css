@@ -12,6 +12,8 @@
   --text-color: rgba(53, 52, 48, 1);
   --title-font__color: rgba(255, 194, 230, 1);
   --decorative-element__visibility: hidden;
+  --title-color: rgba(53, 52, 48, 1);
+  --subtitle-color: rgba(0, 0, 40, 1);
 }
 
 @media (prefers-color-scheme: light) {
@@ -23,5 +25,7 @@
     --text-color: rgba(53, 52, 48, 1);
     --title-font__color: rgba(255, 194, 230, 1);
     --decorative-element__visibility: hidden;
+    --title-color: rgba(53, 52, 48, 1);
+    --subtitle-color: rgba(0, 0, 40, 1);
   }
 }

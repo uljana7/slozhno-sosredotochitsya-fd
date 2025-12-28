@@ -87,7 +87,7 @@
   font-size: 18px;
   line-height: 18px;
   text-align: center;
-  color: var(--accent-color);
+  color: var(--title-color);
   background-color: transparent;
   border: none;
   padding: 3px 13px;
@@ -97,7 +97,7 @@
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--title-color);
 }
 
 .header__theme-menu-button:hover {
@@ -105,7 +105,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: solid 1px var(--accent-color);
+  border-bottom: solid 1px var(--title-color);
   outline: none;
 }
 
@@ -126,7 +126,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
-  color: var(--background-color);
+  color: var(--subtitle-color);
   block-size: min-content;
   margin-top: 55px;
 }
@@ -153,7 +153,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
-  color: var(--accent-color);
+  color: var(--title-color);
   margin-bottom: 20px;
 }
 
@@ -162,7 +162,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
-  color: var(--background-color);
+  color: var(--subtitle-color);
   margin-bottom: 10px;
 }
 
@@ -175,7 +175,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 23.4px;
-  color: var(--background-color);
+  color: var(--subtitle-color);
   margin-bottom: 10px;
 }
 
@@ -255,6 +255,7 @@
   .header {
     min-height: 1024px;
     --header__padding: 20px;
+    padding-left: 0;
     grid-template-columns: 1fr 1fr;
   }
   .header__light::after {
@@ -265,7 +266,7 @@
     grid-column: 2;
     grid-row: 1;
     gap: 12px;
-    margin-top: 192px;
+    margin-top: 165px;
   }
   .title-font {
     align-self: start;
@@ -287,8 +288,14 @@
     --main__padding-horizontal: 20px;
   }
   .section {
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: 1fr 2fr;
     gap: 20px;
+  }
+  .section__title {
+    margin-bottom: 0;
+  }
+  .section__article-text{
+    margin-bottom: 0;
   }
   .section__why .section__title {
     grid-column: 1;
@@ -304,6 +311,10 @@
   }
   .section__how .section__title {
     grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+  .section__how .section__subtitle{
+    margin-bottom: 0;
   }
   .section__how article {
     grid-row: 1 span;
@@ -390,8 +401,12 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
+  .section__what .section__subtitle{
+    grid-column: span 1;
+  }
   .section__what article {
     grid-row: 2;
+    grid-column: span 1;
   }
   .section__gallery {
     display: grid;

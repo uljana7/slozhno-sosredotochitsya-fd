@@ -8,10 +8,12 @@
   --acent-color-hover: rgba(255, 0, 112, 0.5);
   --header__padding: 10px;
   --background-color: rgb(0, 0, 40);
+  --title-color: rgba(0, 0, 40, 1);
   --text-color: rgba(241, 178, 206, 1);
   --section__padding: 15px;
   --main__padding-horizontal: 10px;
   --main__padding-vertical: 25px;
   --title-font__color: rgba(219, 0, 255, 1);
   --decorative-element__visibility: visible;
+  --subtitle-color: rgba(0, 0, 40, 1);
 }
