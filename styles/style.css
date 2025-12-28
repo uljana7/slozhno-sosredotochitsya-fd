@@ -290,6 +290,8 @@
   .section {
     grid-template-columns: 1fr 2fr;
     gap: 20px;
+    padding-top: calc(var(--section__padding) - 5px);
+    padding-bottom: calc(var(--section__padding) + 5px);
   }
   .section__title {
     margin-bottom: 0;
@@ -329,6 +331,7 @@
   .section__gallery .section__subtitle {
     grid-row: 1;
     grid-column: 1 / -1;
+    margin-bottom: 0;
   }
   .img-sunset {
     grid-row: 2;
@@ -354,11 +357,16 @@
     grid-column-start: 2;
     grid-column-end: 4;
   }
+  .footer {
+    margin-top: 0;
+    min-height: 1024px;
+  }
   .footer .title-font {
     align-self: center;
     justify-self: center;
     margin-top: 0;
     grid-row: unset;
+    margin-bottom: 40px;
   }
 }
 
@@ -417,6 +425,6 @@
   .section__gallery .section__subtitle {
     grid-row: 1;
     grid-column: 1 / -1;
-    margin-bottom: 0;
+    
   }
 }
