@@ -274,6 +274,7 @@
     grid-column: span 2;
     grid-row: 2;
     margin-top: 173px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
   .header__title {
     align-self: end;
@@ -425,6 +426,8 @@
   .section__gallery .section__subtitle {
     grid-row: 1;
     grid-column: 1 / -1;
-    
+  }
+  .footer {
+    min-height: 768px;
   }
 }
