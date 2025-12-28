@@ -7,7 +7,7 @@
 :root.theme-light {
   --page__background-image: url(../images/cover-image-light.png);
   --accent-color: rgba(255, 141, 203, 1);
-  --acent-color-hover: rgba(255, 141, 203, 0.5);
+  --title-color-hover: rgba(53, 52, 48, 0.5);
   --background-color: rgb(255, 241, 247);
   --text-color: rgba(53, 52, 48, 1);
   --title-font__color: rgba(255, 194, 230, 1);
@@ -20,7 +20,7 @@
   :root {
     --page__background-image: url(../images/cover-image-light.png);
     --accent-color: rgba(255, 141, 203, 1);
-    --acent-color-hover: rgba(255, 141, 203, 0.5);
+    --title-color-hover: rgba(53, 52, 48, 0.5);
     --background-color: rgb(255, 241, 247);
     --text-color: rgba(53, 52, 48, 1);
     --title-font__color: rgba(255, 194, 230, 1);

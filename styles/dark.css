@@ -7,7 +7,7 @@
 :root.theme-dark {
   --page__background-image: url(../images/cover-image-dark.png);
   --accent-color: rgba(255, 0, 112, 1);
-  --acent-color-hover: rgba(255, 0, 112, 0.5);
+  --title-color-hover: rgba(255, 0, 112, 0.5);
   --header__padding: 10px;
   --background-color: rgb(0, 0, 40);
   --text-color: rgba(241, 178, 206, 1);
