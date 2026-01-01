@@ -144,7 +144,7 @@
 
 .main {
   padding: var(--main__padding-vertical) var(--main__padding-horizontal);
-  background: inherit;
+  background: inherit; /*свойство нельзя удалять, иначе на фоне блока будет стоять родительская фоновая картинка*/
   background-image: none;
 }
 
@@ -204,6 +204,10 @@
   gap: 10px;
 }
 
+.section__gallery .section__subtitle {
+  margin-bottom: 0;
+}
+
 .gallery__item {
   box-sizing: border-box;
   margin: 0;
@@ -222,8 +226,8 @@
   min-height: 668px;
   display: grid;
   grid-template-rows: 1fr;
+  background: inherit; /*свойство нельзя удалять, иначе на фоне блока будет стоять родительская фоновая картинка*/
   background-image: none;
-  background-color: inherit;
 }
 
 @media (width >= 768px) {
